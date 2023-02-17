@@ -7,6 +7,7 @@
     --bg-color: #22303C;
     --darker-bg: #19232c;
     --orange: #c45508;
+    --lighter-bg: #344a5d;
 }
 
 /* ---- ALL ---- */
@@ -22,6 +23,7 @@ body {
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
     background-color: var(--bg-color);
+    height: 200vh;
 }
 
 section {
@@ -210,4 +212,21 @@ header {
 
 .uil-play:hover {
     opacity: 70%;
+}
+
+/* ---- POPULAR FILMS SECTION ---- */
+.heading {
+    background-color: var(--lighter-bg);
+    padding: 0.5rem 0.875rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading .title {
+    font-size: 1.2rem;
+    color: var(--white);
+    text-transform: uppercase;
 }
