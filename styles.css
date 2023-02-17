@@ -5,6 +5,7 @@
     --white: #E3e5e8;
     --grey: #71797E;
     --bg-color: #22303C;
+    --darker-bg: #19232c;
     --orange: #c45508;
 }
 
@@ -53,6 +54,7 @@ header {
     max-width: 66.75rem;
 }
 
+/* ---- HEADER SITE NAME ---- */
 .name {
     margin: 0 auto 0 0;
     color: var(--white);
@@ -60,7 +62,13 @@ header {
     text-transform: uppercase;
 }
 
+.name span {
+    color: var(--orange)
+}
+
+/* ---- HEADER ACCOUNT IMAGE ---- */
 .account-img {
+    display: flex;
     height: 6rem;
     width: 6rem;
     transition: .6s;
@@ -70,14 +78,33 @@ header {
     opacity: 70%;
 }
 
+/* ---- HEADER SEARCH BAR ---- */
 .uil {
     color: var(--white);
+    cursor: pointer;
+    transition: .4s;
 }
 
 .uil:hover {
-    cursor: pointer;
+    color: var(--orange);
 }
 
-.name span {
-    color: var(--orange)
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 4rem;
+    padding: 0.5rem 0.938rem;
+    margin-right: 1rem;;
+    column-gap: 0.7rem;
+    width: 100%;
+    max-width: 15rem;
+    background-color: var(--darker-bg);
+}
+
+#search-content {
+    background: transparent;
+    color: var(--white);
+    outline: none;
+    border: none;
+    width: 100%;
 }
