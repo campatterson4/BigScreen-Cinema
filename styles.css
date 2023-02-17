@@ -1,0 +1,24 @@
+/* ---- ROOT COLORS ---- */
+:root {
+    --black: #424242;
+    --true-black: #000;
+    --white: #E3e5e8;
+    --grey: #71797E;
+}
+
+
+
+
+/* ---- ALL ---- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
