@@ -4,10 +4,9 @@
     --true-black: #000;
     --white: #E3e5e8;
     --grey: #71797E;
+    --bg-color: #22303C;
+    --orange: #c45508;
 }
-
-
-
 
 /* ---- ALL ---- */
 *,
@@ -21,4 +20,64 @@
 body {
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--white);
+}
+
+/* ---- HEADER ---- */
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: var(--bg-color);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 0;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 66.75rem;
+}
+
+.name {
+    margin: 0 auto 0 0;
+    color: var(--white);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.account-img {
+    height: 6rem;
+    width: 6rem;
+    transition: .6s;
+}
+
+.account-img:hover {
+    opacity: 70%;
+}
+
+.uil {
+    color: var(--white);
+}
+
+.uil:hover {
+    cursor: pointer;
+}
+
+.name span {
+    color: var(--orange)
 }
