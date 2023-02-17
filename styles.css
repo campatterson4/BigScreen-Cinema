@@ -3,7 +3,7 @@
     --black: #424242;
     --true-black: #000;
     --white: #E3e5e8;
-    --grey: #71797E;
+    --grey: #C0C0C0;
     --bg-color: #22303C;
     --darker-bg: #19232c;
     --orange: #c45508;
@@ -21,6 +21,7 @@
 body {
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
+    background-color: var(--bg-color);
 }
 
 a {
@@ -79,13 +80,13 @@ header {
 }
 
 /* ---- HEADER SEARCH BAR ---- */
-.uil {
+.uil-search {
     color: var(--white);
     cursor: pointer;
     transition: .4s;
 }
 
-.uil:hover {
+.uil-search:hover {
     color: var(--orange);
 }
 
@@ -108,3 +109,37 @@ header {
     border: none;
     width: 100%;
 }
+
+/* ---- LEFT NAV ---- */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+    position: fixed;
+    top: 50%;
+    left: 1.125rem;
+    transform: translateY(-50%);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--grey);
+    transition: 0.4s;
+}
+
+.link:hover, .active-link {
+    transform: scale(1.02);
+    color: var(--orange);
+    transition: 0.4s;
+}
+
+.link-title {
+    font-size: 0.7rem;
+}
+
+.link .uil {
+    font-size: 1.4rem;
+}
+
