@@ -24,6 +24,10 @@ body {
     background-color: var(--bg-color);
 }
 
+section {
+    padding: 2rem 0 2rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -117,7 +121,7 @@ header {
     row-gap: 2.1rem;
     position: fixed;
     top: 50%;
-    left: 1.125rem;
+    left: 3.7rem;
     transform: translateY(-50%);
 }
 
@@ -143,3 +147,67 @@ header {
     font-size: 1.4rem;
 }
 
+/* ---- MAIN IMAGE ---- */
+.main-img {
+    position: absolute;
+    top: 4rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    z-index: -999;
+    height: 100%;
+    width: 100%;
+}
+
+/* ---- MAIN SECTION ---- */
+.main {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem !important;
+    border-radius: 0.5rem;
+    position: relative;
+    min-height: 29.375rem;
+}
+
+.main-title {
+    font-size: 2.7rem;
+    color: var(--white);
+}
+
+.main-text {
+    padding-left: 2.5rem;
+    position: relative;
+    top: 3.125rem;
+}
+
+.main-text p {
+    color: var(--orange);
+    margin: 0.625rem 0 1.25rem;
+    font-size: 0.938rem;
+}
+
+.watch-trailer {
+    color: var(--white);
+    display: flex;
+    column-gap: 0.8rem;
+    align-items: center;
+}
+
+.watch-trailer span {
+    font-size: .9rem;
+}
+
+.uil-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.313rem;
+    transition: .6s;
+}
+
+.uil-play:hover {
+    opacity: 70%;
+}
